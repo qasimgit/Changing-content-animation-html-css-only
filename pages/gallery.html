@@ -19,7 +19,7 @@
     margin: 0%;
     font-family: 'Yanone Kaffeesatz', sans-serif , 'Righteous', cursive;
     
-;
+
 
 }
 
@@ -97,51 +97,57 @@ main{
     border: 3px solid white;
 }
 
-.forms h1{
-    font-size: 65px;
+.naran{
+    border: 10px solid whitesmoke;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 55px;
+
+}
+
+.naran h2{
     color: white;
-    margin: 60px 0px 50px 50px ;
+    font-size: 45px;
+    margin: 10px 20px;
 }
 
-
-form{
-    width: 500px;
-    height: 600px;
-    border: 2px dotted lightgoldenrodyellow;
-    background-color: rgba(0,0,0,0.3)
-
-}
-
-input{
-    padding: 15px 30px ;
-    font-size: 25px;
-    margin-left: 15px;
-    margin-top: 15px;
-    background-color: lightgoldenrodyellow;
-    
-}
-
-input:focus{
-    background-color: white;
-}
-input[type="text"] {
-    margin-bottom: 15px;
-}
-
-.gender{
-    color: white;
-    text-shadow: 3px black;
-    font-size: 30px;
-    margin-top: 15px;
+.naran img{
+    height: 150px;
+    width: 300px;
+    display: inline;
+    justify-content: space-around;
+    margin: 5px 135px;
+    border: 1px solid black;
+    border-radius: 5px;
     margin-bottom: 15px;
 
+
 }
-input[type="radio"]:checked + label{
+
+
+.kaghan{
+    border: 10px solid whitesmoke;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 45px;
+}
+
+.kaghan h2{
     color: white;
-    font-size: 35px;
+    font-size: 45px;
+    margin: 10px 20px;
 }
 
+.kaghan img{
+    height: 150px;
+    width: 300px;
+    display: inline;
+    justify-content: space-around;
+    margin: 5px 135px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
 
+
+}
 </style>
 
 <body>
@@ -161,46 +167,28 @@ input[type="radio"]:checked + label{
         </div>
 
     </header>
-    
     <main>
-        <div class="forms">
-
-            <h1>
-                ContactUs
-            </h1>
-            <form action="#">
-                
-                    
-                    <input type="text" name="FirstName" placeholder="FirstName" required> <br>
-                    <input type="text" name="LastName" placeholder="LastName" required>
-                    <br>
-                    
-                    
-                
-                    <input type="email" name="email" placeholder="Email" required> <br>
-                    <input type="password" name="password" placeholder="Password" required> <br>
-                    <input type="password" name="password" placeholder="Conform Password" required> <br>
-                
-                <div class="gender">
-
-                        <input type="radio" id="male" name="gender">
-                        <label for="male">Male</label>
-
-                    
-                        <input type="radio" id="female" name="gender">
-                        <label for="female">Female</label>
-                         <br>
-
-                        <input type="submit" name="submit">
-
-                    
-                </div>
-            </form>
+        <div class="allpicscont">
             
+            <div class="naran">
+                <h2>
+                    Naran
+                </h2> </br>
+                <a href="#"><img src="naran1.jpg"></a>
+                <a href="#"><img src="naran2.jpg"></a>
+                <a href="#"> <img src="naran3.jpg"></a>
+            </div>
+            <div class="kaghan">
+                <h2>
+                    Kaghan Valley
+                </h2>
+                <a href="#"><img src="kaghan1.jpg"></a>
+                <a href="#"><img src="kaghan2.jpg"></a>
+                <a href="#"><img src="kaghan3.jpg"></a>
+            
+            </div>
         </div>
-        </main>
-
-
+    </main>
 </body>
 
 </html>
