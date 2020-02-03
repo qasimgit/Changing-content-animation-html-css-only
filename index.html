@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
-    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -42,6 +42,7 @@
           <h2>
             Wellcome to Pakistan
           </h2>
+          <h4 id="timer"></h4>
           <h1>Do Come and Visit <span class="changecontent"> </span></h1>
           <h2>
             Visiting once Pakistan isn't enough
@@ -53,4 +54,24 @@
       </div>
     </main>
   </body>
+  <script>
+    var body = window.document.getElementsByTagName("body")[0];
+    var imageNumber = 1;
+    function imageChange() {
+      //   body.style.background = "url(./assets/naran" + imageNumber + ".jpg)";
+      body.style.background = `url(./assets/naran${imageNumber}.jpg)`;
+      body.style.backgroundSize = "cover";
+      if (imageNumber == 3) {
+        imageNumber = 1;
+      } else {
+        imageNumber++;
+      }
+    }
+
+    setInterval(imageChange, 3000);
+    setInterval(() => {
+      var timer = document.getElementById("timer");
+      timer.innerText = new Date();
+    }, 1000);
+  </script>
 </html>
